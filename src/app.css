@@ -30,4 +30,26 @@ button:disabled { opacity:.45; cursor:not-allowed; }
 .tabs [role="tab"] { background:#e4eeee; color:#173c43; }
 .tabs [role="tab"][data-selected] { background:#0f766e; color:white; }
 .timeline { border-left:2px solid #b9d6d6; margin-left:6px; padding-left:16px; }
+.identity { display:flex; gap:10px; align-items:flex-end; flex-wrap:wrap; }
+.identity label { font-size:13px; font-weight:600; }
+.syncbar { display:flex; gap:14px; align-items:center; flex-wrap:wrap; background:#fff; border:1px solid #d7e5e7; border-radius:12px; padding:10px 14px; margin-bottom:14px; font-size:14px; }
+.syncbar .inline { display:flex; gap:6px; align-items:center; font-weight:500; }
+.badge.rev { background:#e0e7ff; color:#3730a3; }
+.badge.warn { background:#fef3c7; color:#92400e; }
+.rev-tag { color:#5f7880; font-size:13px; font-weight:400; }
+.offline { background:#fef3c7; border:1px solid #f59e0b; color:#92400e; padding:10px 14px; border-radius:10px; }
+.notice { background:#e0f2f1; border:1px solid #99d5cf; color:#0d5250; padding:10px 14px; border-radius:10px; }
+.outbox { background:#fff; border:1px solid #d7e5e7; border-radius:12px; padding:10px 14px 10px 32px; font-size:14px; color:#405a62; }
+.event { margin-bottom:14px; }
+.event .meta { display:flex; gap:8px; align-items:center; flex-wrap:wrap; font-size:12px; color:#5f7880; }
+.event code { background:#eef4f4; border-radius:6px; padding:1px 6px; }
+.event.rejected > div:last-child { color:#b42318; }
+.event.conflict > div:last-child { color:#92400e; }
+.conflict { border:1px solid #f2c94c; background:#fffdf5; border-radius:12px; padding:12px; margin-bottom:12px; }
+.conflict .compare { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:10px 0; }
+.conflict .compare > div { border:1px dashed #d9c27a; border-radius:10px; padding:10px; }
+.conflict.resolved { opacity:.7; border-color:#d7e5e7; background:#fff; }
+.hint { color:#5f7880; font-size:13px; }
+.merge-line { padding:10px 0; border-bottom:1px solid #e4ecee; }
+.merge-line .meta { margin-top:6px; }
 @media(max-width:900px){ .hero{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr} }
